@@ -88,3 +88,31 @@ requirements.txt                            Python dependencies
 This is not a real large language model. The tiny NumPy RNN is educational. The useful answers come mainly from searching the GPT4All-J dataset index.
 
 Searching the full JSONL index scans 808,812 rows and can be slow. For faster production use, replace the JSONL scan with a vector database, SQLite FTS5, LanceDB, FAISS, or BM25 index.
+
+
+## UltraChat support
+
+This project now also supports the OpenBMB UltraChat dataset:
+https://huggingface.co/datasets/openbmb/UltraChat
+
+A small UltraChat sample index can be committed for quick tests. Larger/full local indexes are ignored by git.
+
+Build local indexes:
+
+```bash
+pip install -r requirements.txt
+python prepare_dataset.py
+```
+
+Build the full UltraChat index too:
+
+```bash
+python prepare_dataset.py --include-ultrachat-full
+```
+
+Run:
+
+```bash
+python numpy_tiny_llm_export/run_model.py "how can cross training benefit runners"
+python numpy_tiny_llm_export/chat.py
+```

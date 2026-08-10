@@ -1,0 +1,21 @@
+{
+  "repo_id": "openbmb/UltraChat",
+  "dataset_url": "https://huggingface.co/datasets/openbmb/UltraChat",
+  "files": [
+    "train_0.jsonl",
+    "train_1.jsonl",
+    "train_2.jsonl",
+    "train_3.jsonl",
+    "train_4.jsonl",
+    "train_5.jsonl",
+    "train_6.jsonl",
+    "train_7.jsonl",
+    "train_8.jsonl",
+    "train_9.jsonl"
+  ],
+  "sample_index_path": "ultrachat_sample_index.jsonl",
+  "sample_dialogues_streamed": 2447,
+  "sample_pairs_indexed": 12004,
+  "rnn_training_characters_pre_filter": 899946,
+  "note": "prepare_dataset.py can build a larger/full UltraChat index locally after cloning."
+}

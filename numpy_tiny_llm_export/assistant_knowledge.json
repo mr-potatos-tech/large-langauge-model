@@ -1532,5 +1532,11 @@
     "data/train-00001-of-00004-62d2ea1ccbf3c546.parquet",
     "data/train-00002-of-00004-5d4368eca33ee435.parquet",
     "data/train-00003-of-00004-ef0356d35c1172f0.parquet"
-  ]
+  ],
+  "ultrachat_enabled": true,
+  "ultrachat_repo_id": "openbmb/UltraChat",
+  "ultrachat_url": "https://huggingface.co/datasets/openbmb/UltraChat",
+  "ultrachat_sample_index_path": "ultrachat_sample_index.jsonl",
+  "ultrachat_manifest_path": "ultrachat_manifest.json",
+  "ultrachat_sample_pairs_indexed": 12004
 }

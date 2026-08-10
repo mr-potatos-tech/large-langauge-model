@@ -16,3 +16,8 @@ numpy_tiny_llm_export/*.parquet
 # Optional local outputs
 *.log
 .DS_Store
+
+# UltraChat local indexes/data
+numpy_tiny_llm_export/ultrachat_full_index.jsonl
+numpy_tiny_llm_export/ultrachat_full_index.jsonl.*
+/datasets/ultrachat/
