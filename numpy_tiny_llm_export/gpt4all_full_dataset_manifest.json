@@ -1,0 +1,82 @@
+{
+  "repo_id": "nomic-ai/gpt4all-j-prompt-generations",
+  "dataset_tree_url": "https://huggingface.co/datasets/nomic-ai/gpt4all-j-prompt-generations/tree/main/data",
+  "files": [
+    {
+      "file": "datasets/gpt4all_j_prompt_generations_all/train-00000-of-00004-49a07627b3b5bdbe.parquet",
+      "size": 476346417
+    },
+    {
+      "file": "datasets/gpt4all_j_prompt_generations_all/train-00001-of-00004-62d2ea1ccbf3c546.parquet",
+      "size": 261195846
+    },
+    {
+      "file": "datasets/gpt4all_j_prompt_generations_all/train-00002-of-00004-5d4368eca33ee435.parquet",
+      "size": 175739621
+    },
+    {
+      "file": "datasets/gpt4all_j_prompt_generations_all/train-00003-of-00004-ef0356d35c1172f0.parquet",
+      "size": 77391732
+    }
+  ],
+  "parquet_files": [
+    "data/train-00000-of-00004-49a07627b3b5bdbe.parquet",
+    "data/train-00001-of-00004-62d2ea1ccbf3c546.parquet",
+    "data/train-00002-of-00004-5d4368eca33ee435.parquet",
+    "data/train-00003-of-00004-ef0356d35c1172f0.parquet"
+  ],
+  "columns_seen": [
+    "prompt",
+    "response",
+    "source"
+  ],
+  "total_rows_seen": 808812,
+  "index_rows": 808812,
+  "source_counts_top": [
+    [
+      "pacovaldez/stackoverflow-questions",
+      256231
+    ],
+    [
+      "nomic-ai",
+      203630
+    ],
+    [
+      "laion/unified_chip2",
+      61969
+    ],
+    [
+      "unified_unifiedskg_instructions",
+      61154
+    ],
+    [
+      "unified_multi_sum",
+      57352
+    ],
+    [
+      "unified_chip2",
+      54976
+    ],
+    [
+      "unified_abstract_infill_output_0-100_000.jsonl",
+      26505
+    ],
+    [
+      "unified_abstract_infill_output-100-000-x.jsonl",
+      26057
+    ],
+    [
+      "unified_hc3_human",
+      23145
+    ],
+    [
+      "output_unified_unifiedskg.jsonl",
+      19987
+    ],
+    [
+      "",
+      17806
+    ]
+  ],
+  "index_path": "numpy_tiny_llm_export/gpt4all_full_dataset_index.jsonl"
+}
