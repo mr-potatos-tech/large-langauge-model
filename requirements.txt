@@ -1,4 +1,13 @@
 numpy
-pyarrow
 pandas
+pyarrow
 huggingface_hub
+sentence-transformers
+faiss-cpu
+transformers
+torch
+accelerate
+datasets
+peft
+scikit-learn
+joblib

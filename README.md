@@ -116,3 +116,37 @@ Run:
 python numpy_tiny_llm_export/run_model.py "how can cross training benefit runners"
 python numpy_tiny_llm_export/chat.py
 ```
+
+
+## Root fix: semantic retrieval + generative transformer
+
+The old version scanned a giant JSONL file and returned the closest stored answer. That is not good enough: it memorizes examples, gets slow, and can get worse as the list grows.
+
+The new version uses:
+
+1. `sentence-transformers/all-MiniLM-L6-v2` to embed questions by meaning.
+2. FAISS vector search for fast semantic retrieval.
+3. `google/flan-t5-small` to synthesize a fresh answer from the retrieved context.
+4. Optional `train_lora.py` if you want real fine-tuning with LoRA.
+
+Build the semantic index:
+
+```bash
+pip install -r requirements.txt
+python build_vector_index.py --max-records 50000
+```
+
+Run:
+
+```bash
+python numpy_tiny_llm_export/run_model.py "explain recursion like I am 12"
+python numpy_tiny_llm_export/chat.py
+```
+
+Optional real training:
+
+```bash
+python train_lora.py --max-examples 20000 --epochs 1
+```
+
+This is still not ChatGPT, but it is now a real neural retrieval + generation system instead of keyword search over memorized answers.

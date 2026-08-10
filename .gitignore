@@ -21,3 +21,9 @@ numpy_tiny_llm_export/*.parquet
 numpy_tiny_llm_export/ultrachat_full_index.jsonl
 numpy_tiny_llm_export/ultrachat_full_index.jsonl.*
 /datasets/ultrachat/
+
+# Generated semantic indexes and training outputs
+numpy_tiny_llm_export/vector_index.faiss
+numpy_tiny_llm_export/vector_metadata.jsonl
+numpy_tiny_llm_export/lora_training_output/
+numpy_tiny_llm_export/lora_adapter/
